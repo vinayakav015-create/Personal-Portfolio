@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vinay | Portfolio</title>
+<link href =https://www.pngmart.com/files/16/Google-Logo-PNG-Image.png   rel="icon" sizes="16*16">
+</head>
+<body style="background-color: #b53d67;"></body>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial;
+background:#111;
+color:white;
+}
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 60px;
+background:#000;
+}
+
+header h1{
+color:#00f7ff;
+}
+
+nav a{
+color:white;
+margin:0 15px;
+text-decoration:none;
+font-size:18px;
+}
+
+nav a:hover{
+color:#00f7ff;
+}
+
+.hero{
+height:90vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+}
+
+.hero h2{
+font-size:48px;
+}
+
+.hero span{
+color:#00f7ff;
+}
+
+.btn{
+padding:12px 25px;
+background:#00f7ff;
+border:none;
+cursor:pointer;
+font-size:16px;
+margin-top:20px;
+}
+
+section{
+padding:80px 60px;
+}
+
+.about{
+display:flex;
+gap:40px;
+align-items:center;
+}
+
+.about img{
+width:200px;
+border-radius:50%;
+}
+
+.skills{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+gap:20px;
+}
+
+.skill{
+background:#222;
+padding:20px;
+text-align:center;
+border-radius:10px;
+}
+
+.projects{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.project{
+background:#222;
+padding:20px;
+border-radius:10px;
+}
+
+footer{
+text-align:center;
+padding:20px;
+background:#000;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Vinay</h1>
+
+<nav>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+
+<div class="hero">
+<h2>Hello, I'm <span>Vinayaka</span></h2>
+<p>Aspiring Software Developer</p>
+
+<button class="btn" onclick="scrollToContact()">Hire Me</button>
+</div>
+
+
+<section id="about">
+<h2>About Me</h2>
+
+<div class="about">
+<img src="profile.jpg">
+
+<p>
+ I am Vinay, an aspiring Software Developer passionate about programming and technology.  
+<br>
+<br>
+I am skilled in Python and Frontend Development (HTML, CSS, JavaScript) and I love building responsive websites and small applications.
+<br>
+<br>
+And Currently seeking fresher opportunities to grow and contribute.
+<br>
+</p>
+
+</div>
+</section>
+
+
+<section id="skills">
+<h2>Skills</h2>
+
+<div class="skills">
+
+<div class="skill">HTML</div>
+<div class="skill">CSS</div>
+<div class="skill">JavaScript</div>
+<div class="skill">Python</div>
+
+</div>
+
+</section>
+
+
+<section id="projects">
+<h2>Projects</h2>
+
+<div class="projects">
+
+<div class="project">
+<h3>Job-Tracker</h3>
+<p> It will help to you apply for the jobs </Job-Tracker></p>
+</div>
+
+<div class="project">
+<h3> Portfolio Website</h3>
+<p>Its a personal portfolio website</p>
+</div>
+
+<div class="project">
+<h3>Smart-Recipe </h3>
+<p> Web appp desplaying 50+ Restaurent-style recipe</p>
+</div>
+
+</div>
+
+</section>
+
+
+<section id="contact">
+<h2>Contact</h2>
+
+<p>Email: vinayakav015@gmail.com</p>
+<p>Phone: +91 8008132634</p>
+
+</section>
+
+
+<footer>
+<p>© 2026 Vinayaka | Portfolio</p>
+</footer>
+
+<script>
+
+function scrollToContact(){
+document.getElementById("contact").scrollIntoView({behavior:"smooth"});
+}
+
+</script>
+
+</body>
+</html>
